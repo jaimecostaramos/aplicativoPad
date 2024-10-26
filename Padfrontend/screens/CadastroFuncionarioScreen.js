@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button, Alert } from 'react-native';
 import axios from 'axios';
+import { cadastroFuncionarioStyles as styles } from '../styles/CadastroFuncionarioStyles'; // Importação dos estilos
 
 const CadastroFuncionarioScreen = () => {
   const [nome, setNome] = useState('');
@@ -61,25 +62,5 @@ const CadastroFuncionarioScreen = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    padding: 10,
-    marginVertical: 10,
-    borderRadius: 5,
-  },
-});
 
 export default CadastroFuncionarioScreen;
